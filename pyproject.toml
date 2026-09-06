@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vuln-scanner"
+version = "2.0.0"
+description = "Educational network vulnerability scanner with CVE/NVD lookups, CVSS scoring, HTTP header and TLS analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "MANJU101206" }]
+
+[project.scripts]
+vuln-scanner = "vuln_scanner.cli:main"
+
+[tool.setuptools]
+packages = ["vuln_scanner"]

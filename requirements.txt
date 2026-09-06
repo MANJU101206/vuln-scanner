@@ -1,0 +1,6 @@
+# No third-party runtime dependencies -- uses only the standard library
+# (socket, ssl, urllib, argparse, concurrent.futures, dataclasses).
+
+# Dev / CI dependencies:
+pytest>=7.4
+flake8>=7.0
